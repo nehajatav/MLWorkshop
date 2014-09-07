@@ -23,7 +23,7 @@ elbow_plot(A)
 #add outlier to dataset
 A=rbind(A,c(100,100))
 plot(A)
-cl = kmeans(A,4,nstart=1)
+cl = kmeans(A,4,nstart=50)
 plot(A,col=cl$cluster)
 
 #elbow plot for the dataset with outlier
